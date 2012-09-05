@@ -1,0 +1,499 @@
+/*
+ *  This is the file where you put your CSS changes. 
+ *  You should preferrably use this and override the 
+ *  relevant properties you want to change here instead 
+ *  of customizing plone.css to survive upgrades. Writing
+ *  your own plone.css only makes sense for very heavy 
+ *  customizations. Useful variables from Plone are 
+ *  documented at the bottom of this file.
+ */
+ 
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+/*Question/Answer Show/Hide Divs*/
+.question{
+        background:#F4F4E5;
+	padding:6px;
+	border:1px solid #331D00;
+	margin:5px 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	}
+		
+.answer{
+	background:#EEF5EC;
+	padding:6px;
+	border:1px solid #003300;
+	margin:5px 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	}
+.showAnswer{
+	width:130px;
+        cursor:pointer;
+        margin-top:3px;
+	}
+
+.template-coursetitle_view  .documentFirstHeading{color:#867A68;font-weight:600;font-size:180%;}
+
+/*DIV IN NAVAGATION PORTLET*/
+#coursetitle{
+	color:#FFCC66;
+	font-weight:600;
+	font-size:1.1em;
+	margin-left:-5px;
+	}
+
+/*BLOCK DOCUMENT AUTHOR*/
+#content #plone-document-byline{display:none;}
+
+/*SHOW DOCUMENT AUTHOR FOR COMMENTING*/
+.comment .documentByLine{display:block;}
+.comment .documentAuthor{display:block;}
+
+/*EDITOR'S PORTLET*/
+.portlet-editors{border-top:0px;border-left:0px;border-right:2px solid #000;border-bottom:2px solid #000;}
+.portletHeader{border:none;}
+.portlet-editors{background:#ECE7D4;color:#000;}
+.portlet-editors .portletHeader{background:#867A68;color:#FFF;font-weight:bold;font-size:1.2em;}
+
+    
+    
+body{
+    background-color:#000033;
+    }
+
+#visual-portal-wrapper{
+    margin:2px 15px 0px 15px;
+    background-color:#FFFFFF;
+    }
+
+#portal-top{
+	background-image:url(headertile.jpg);
+	background-repeat:repeat-x;
+    }
+
+#portal-header{
+	height:55px;
+	width:100%;
+    margin:0px;
+	padding:0px;	
+	}
+	
+#portal-header .hiddenStructure{
+    display:none;
+}
+	
+/*CUSTOM DIVS IN LOGO TEMPLATE*/
+#titlebox{
+    width:316px;
+    height:55px;
+    margin-top:0px;
+    background-image:url(headerimage.jpg);
+    }
+#psulogo{
+    margin-left:8px;
+    padding-top:5px;
+    }
+
+#portal-breadcrumbs{
+    background-color:#867A68;
+    border-bottom: solid 4px #000033;
+    padding:4px;
+    font-size: 80%;
+    margin-bottom: 0;
+    margin-left: 0;
+    }
+
+#portal-breadcrumbs a {
+text-decoration:none;color:#FFFFFF;
+}
+
+#portal-personaltools{background-color:#F7F0D4;
+    border-top-color: #8cacbb;
+    border-top:none;
+    border-top-width: 1px;
+    border-bottom-color: #332525;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#portal-searchbox{
+	padding:0px;
+	margin-top:4px;
+	margin-right:4px;
+	}
+
+.searchSection{display:none;}
+
+
+#portal-siteactions{
+   float:right;
+   padding-top:4px;
+   padding-bottom:0px;
+}
+
+#portal-siteactions li a {
+    border: none;
+    color: #000000;
+}
+
+#portal-siteactions li.selected a {
+    background-color: #dee7ec;
+    color: #436976;
+    border: 1px solid #8cacbb;
+}
+
+#portal-siteactions li a:hover {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    text-decoration:underline;
+}
+
+
+#portal-columns{
+   background-color:#335577;
+}
+
+#portal-column-content{
+    background-color:#FFFFFF;
+    width:80%;
+    float:right;
+    margin:0;
+    padding:0;
+}
+
+#portal-column-one {
+    float:left;
+    width:20%;
+    margin:0;
+    padding:0;
+    border:none; 
+}
+
+/*GIVE WHITE BG TO CONTROL PANEL OPTIONS*/
+#portlet-prefs{
+    background-color:#ffffff;
+}
+
+#content{
+    padding:20px;
+    margin:0;
+}
+
+/*COURSE HEADER IMAGES FOR TEMPLATE DIVS*/
+#courseimagetile{
+	clear:both;
+	margin-left: -20px;
+    margin-top: -20px;
+    margin-right: -20px;
+	height:<dtml-var "_[courseImageTile].height">px;
+	overflow:hidden;
+	background-image:url(&dtml-portal_url;/&dtml-courseImageTile;);
+	background-repeat:x-repeat;
+	}
+
+#courseimageleft{
+	height:<dtml-var "_[courseImageLeft].height">px;
+	width:<dtml-var "_[courseImageLeft].width">px;
+	float:left;
+	background-image:url(&dtml-portal_url;/&dtml-courseImageLeft;);
+	background-repeat:no-repeat;
+	}
+
+#courseimageright{
+	height:<dtml-var "_[courseImageRight].height">px;
+	width:<dtml-var "_[courseImageRight].width">px;
+	float:right;
+	background-image:url(&dtml-portal_url;/&dtml-courseImageRight;);
+	background-repeat:no-repeat;
+	}
+
+#portal-footer{
+	background-color:#000033;
+	color:#FFFFFF;
+	margin:0;
+	text-align:center;
+    line-height:1.5em;
+	border-bottom:none;
+	border-top:1px solid #335577;}
+
+#portal-footer a{
+    color:#FFFFFF;
+    }
+
+#portal-footer a:visited{
+    color:#FFFFFF;
+    }
+
+/*NAVIGATION PORTLET STYLES*/
+.portlet{
+    padding-left:.5em;
+}
+
+dl.portlet ul.navTreeLevel0 > .navTreeItem {
+    /*border-bottom: 0.1em dotted #4573A2;*/
+    border-bottom:none;
+    line-height: 1em;
+    padding: 0.25em 0em;
+}
+
+dl.portlet  a:hover {
+    color:#CADAEB !important;
+}
+
+dl.portlet ul.navTree .navTreeCurrentItem {
+    background-color: #6C859D;
+    border-left: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.portletNavigationTree{
+    border:none;
+    }
+
+.portletNavigationTree .portletHeader{
+    background-color:#335577;
+    border:none;
+    }
+
+.portletNavigationTree .state-published{
+    color:#FFFFFF !important;
+    }
+
+.navTreeItem a, dd.portletItem .navTreeItem a{
+    border: none;
+    color:#FFFFFF;
+    }
+
+.navTreeItem a:hover, dd.portletItem .navTreeItem a:hover{
+    background-color: #6C859D; 
+    color: #FFFFFF;
+    border:none;
+    margin-right:0px;
+    }
+
+.portletStaticText{
+    margin:3px 7px 3px 3px;
+    color:#FFFFFF;
+    }
+
+/*STYLES FOR PREVIOUS-NEXT DIV*/
+.lessonpagelistingBar{
+    width:175px;
+    float:right;
+    background-color:#F7F0D4;
+    border:1px solid #867A68;
+    margin:0px 0px 5px 10px;
+    padding:0 5px;
+    color:#867A68;
+    }
+
+.lessonpagelistingBar .listingNext{
+    float:right;
+	}
+
+#content .lessonpagelistingBar a:link{
+    color:#867A68;
+    text-decoration:none;
+	}
+	
+#content .lessonpagelistingBar a:hover{
+    color:#000000 !important;
+	}
+	
+.listingBar{
+    padding-bottom:4px;
+    background-color:#F7F0D4;
+    border:1px solid #867A68;
+	}
+
+div .listingBar a:hover{
+    background-color:#F7F0D4;
+    color:#000000;
+	}
+
+div.listingBar a {
+    border: 0.1em solid #CCCCCC;
+    display: inline-block;
+    padding: 0;
+	}
+
+div .listingBar {
+    margin:0;
+    padding:4px;
+	}
+
+.listingBar a{
+	color:#867A68;
+	}
+
+.listingBar .previous {
+	float:left;
+	}
+.listingBar .next {
+	float:right;
+	}
+
+.documentActions li{
+    float:right;
+}
+
+#document-action-printall{
+	padding-bottom:4px;
+	}
+
+/*STYLES USED FOR GLOBAL NAVIGATION BAR - MODULE/UNIT OPTION*/
+#portal-globalnav {background-color: #ECE6D6;}
+#portal-globalnav li a {border:none;color:#000000;}
+#portal-globalnav li.selected a {background-color: #867A68;border:none;color:#FFFFFF;border-bottom:none;}
+#portal-globalnav li a:hover {background-color: #867A68;color:#FFFFFF;}
+
+
+/* TINYMCE DROPDOWN LIST OF TEXT STYLES */
+h1, h2 {
+    border-bottom:1px solid #867A68;
+    }
+.beigebox{
+    background-color:#ECE7D4;
+    color:#4E403A;
+    padding:8px;
+    margin:5px;
+    }
+.beigeboxLeft{   
+    float:left;
+    width:35%;
+    background-color:#ECE7D4;
+    color:#4E403A;
+    padding:8px;
+    margin:5px 5px 5px 0px;
+    }
+.beigeboxRight{
+    float:right;
+    width:35%;
+    background-color:#ECE7D4;
+    color:#4E403A;
+    padding:8px;
+    margin:5px 0px 5px 5px;
+    }
+.imageLeft{
+    float:left;
+    background-color:#DEE7EC;
+    color:#000099;
+    padding:8px;
+    margin:5px 8px 5px 0px;
+    font-size:.9em;
+    }
+.imageRight{
+    float:right;
+    background-color:#DEE7EC;
+    color:#000099;
+    padding:8px;
+    margin:5px 0px 5px 8px;
+    font-size:.9em;}
+.floatright{
+    float:right;
+    margin-left:8px;
+    }
+.floatleft{
+    float:left;
+    margin-right:8px;
+    }
+.develnotes{
+    color:red;
+    font-size:.9em;
+    }
+.bluebox{
+    background-color:#DEE7EC;
+    border:1px solid #8CACBB;
+    color:Black;
+    font-family: monospace;
+    font-size:120%;
+    overflow:auto;
+    padding:1em;
+    } 
+
+
+
+
+/* </dtml-with> */
+
+/* DOCUMENTATION ON PRE-DEFINED PROPERTIES FROM PLONE */
+
+ /* You can insert colors and other variables from Plone's 
+    base_properties by doing:
+    
+    & dtml-variableName ; (without the spaces, excluded here to not make it render)
+    
+    Example:
+    
+    myLink {
+        color: & dtml-fontColor ;   (again, without the spaces)
+    }
+ 
+   This means you can generate your own elements that use Plone's defaults,
+   and respect any customizations people have done. See base_properties for
+   the default values.
+ 
+   These are the available properties:
+   
+   logoName - the file name of the portal logo
+   
+   fontFamily - the font family used for all text that is not headers
+   
+   fontBaseSize - the base font size that everything is calculated from
+   
+   fontColor - the main font color
+   
+   fontSmallSize - used for various elements like buttons and discreet text
+   
+   discreetColor - the font color of discreet text
+
+   backgroundColor - the background color 
+   
+   linkColor - the color used on normal links
+
+   linkActiveColor - color used on active links
+
+   linkVisitedColor - color used on visited links
+   
+   borderWidth - the width of most borders in Plone
+   
+   borderStyle - the style of the border lines, normally solid
+   
+   borderStyleAnnotations - style of border lines on comments etc
+   
+   globalBorderColor - the border color used on the main tabs, the portlets etc
+   
+   globalBackgroundColor - background color for the selected tabs, portlet headings etc
+   
+   globalFontColor - the color of the font in the tabs and in portlet headings
+   
+   headingFontFamily - font family for h1/h2/h3/h4/h5/h6 headlines
+   
+   contentViewBorderColor - the content view tabs border color
+   
+   contentViewBackgroundColor - the content view tabs background color
+   
+   contentViewFontColor - the font color used in the content view tabs
+   
+   inputFontColor - the font color used for input elements
+   
+   textTransform - whether to lowercase text in portlets, tabs etc.
+   
+   evenRowBackgroundColor - the background color of even rows in listings
+   
+   oddRowBackgroundColor - the background color of even rows in listings
+   
+   notifyBorderColor - border color of notification elements like the status message, the calendar focus
+   
+   notifyBackgroundColor - background color of notification elements like the status message, the calendar focus
+   
+   helpBackgroundColor - background color of information pop-ups (currently not used)
+          
+ */
+
+

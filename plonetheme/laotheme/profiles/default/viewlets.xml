@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!-- This file holds the setup configuration of the viewlet managers
+     for the "LAOtheme" skin.
+     -->
+
+<object>
+
+  <!-- Viewlets keep the same ordering than the default skin ('Plone Default'
+       out of the box).
+       You can specify skinname="*" if you want changes apply for all skins.
+       Using "True"" for the 'make-default' parameter will make the 'skinname'
+       value set as default skinname. Means the name of the skin that would be
+       used in case the viewlets ordering was not specified for the currently
+       used skin.
+       The 'based-on' attribute lets you inherit the viewlets ordering from an
+       existing skin.
+       -->
+  <order manager="plone.portalfooter" skinname="LAOtheme"
+         based-on="Plone Classic Theme">
+    <!-- The definition of a viewlet accepts these parameters:
+         - name: quite self explanatory, the name of the viewlet.
+         - insert-before: name of the viewlet before which it must be added or
+           moved.
+         - insert-after: name of the viewlet after which it must be added
+           or moved.
+         - remove: supported but rarely needed, removes the viewlet from the
+           ordering list (doesn't mean that it hides the viewlet).
+         Note: insert-before and -after accept the value "*" which means
+         "all".
+         -->
+<!-- EXAMPLE (UNCOMMENT TO MAKE AVAILABLE):
+    <viewlet name="plonetheme.someviewlet"
+             insert-before="*" />
+-->
+  </order>
+  
+    <order manager="plone.portalheader" skinname="LAOtheme">
+    	<viewlet name="plone.site_actions" insert-before="plone.searchbox"/>
+    	<viewlet name="plone.searchbox"  />
+		<viewlet name="plonetheme.laotheme.logo" />
+	</order>
+	
+	<order manager="plone.belowcontentbody" skinname="LAOtheme"
+           based-on="Plone Classic Theme">
+    	<viewlet name="plonetheme.laotheme.documentactions"
+                 insert-before="*" />
+    </order>
+
+  	<order manager="plone.contentviews" skinname="LAOtheme">
+    	<viewlet name="plone.contentviews"/>
+    	<viewlet name="plone.contentactions"/>
+    	<viewlet name="plone.nextprevious"/>
+  	</order>
+  
+	<order manager="plone.portalfooter" skinname="LAOtheme">
+    	<viewlet name="plonetheme.laotheme.footer" insert-before="plone.colophon" />
+    	<viewlet name="plone.analytics"/>
+    </order>
+     
+     <order manager="plone.belowcontenttitle" skinname="LAOtheme">
+     	<viewlet name="plonetheme.laotheme.nextprevious"/>
+     </order>
+     
+<!--Hidden Viewlets-->
+
+  <hidden manager="plone.portaltop" skinname="LAOtheme">
+    <viewlet name="plone.personal_bar" />
+  </hidden>
+  
+  <hidden manager="plone.portalheader" skinname="LAOtheme">
+		<viewlet name="plone.logo" />
+		<viewlet name="plone.personal_bar" />
+		<viewlet name="plone.global_sections" />
+  </hidden>
+  
+  <!--Hide default path_bar above content-->
+  <hidden manager="plone.abovecontent" skinname="LAOtheme">
+		<viewlet name="plone.path_bar" />
+  </hidden>
+  
+   <hidden manager="plone.belowcontentbody" skinname="LAOtheme">
+  <viewlet name="plone.documentactions"/>
+  <viewlet name="plone.abovecontenttitle.documentactions"/>
+ </hidden>
+  
+  <hidden manager="plone.portalfooter" skinname="LAOtheme">
+    	<viewlet name="plone.footer" />
+    	<viewlet name="plone.site_actions" />
+    	<viewlet name="plone.colophon" />
+  </hidden> 
+
+</object>
