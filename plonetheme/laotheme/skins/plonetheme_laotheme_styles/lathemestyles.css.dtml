@@ -155,6 +155,7 @@ text-decoration:none;color:#FFFFFF;
 
 #portal-columns{
    background-color:#335577;
+   overflow:hidden;
 }
 
 #portal-column-content{
@@ -163,6 +164,8 @@ text-decoration:none;color:#FFFFFF;
     float:right;
     margin:0;
     padding:0;
+    margin-bottom: -2000px; 
+    padding-bottom: 2000px;
 }
 
 #portal-column-one {
@@ -182,6 +185,10 @@ text-decoration:none;color:#FFFFFF;
     padding:20px;
     margin:0;
 }
+
+#viewlet-below-content{
+	margin:5px;
+	}
 
 /*COURSE HEADER IMAGES FOR TEMPLATE DIVS*/
 #courseimagetile{
@@ -305,8 +312,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     color:#000000 !important;
 	}
 	
-.listingBar{
-    padding-bottom:4px;
+div .listingBar{
+    margin-top:4px;
+    padding:4px;
     background-color:#F7F0D4;
     border:1px solid #867A68;
 	}
@@ -322,10 +330,6 @@ div.listingBar a {
     padding: 0;
 	}
 
-div .listingBar {
-    margin:0;
-    padding:4px;
-	}
 
 .listingBar a{
 	color:#867A68;
@@ -358,7 +362,7 @@ h1, h2 {
     border-bottom:1px solid #867A68;
     }
 .beigebox{
-    background-color:#ECE7D4;
+    background-color:#F4F4E5;
     color:#4E403A;
     padding:8px;
     margin:5px;
@@ -366,7 +370,7 @@ h1, h2 {
 .beigeboxLeft{   
     float:left;
     width:35%;
-    background-color:#ECE7D4;
+    background-color:#F4F4E5;
     color:#4E403A;
     padding:8px;
     margin:5px 5px 5px 0px;
@@ -374,7 +378,7 @@ h1, h2 {
 .beigeboxRight{
     float:right;
     width:35%;
-    background-color:#ECE7D4;
+    background-color:#F4F4E5;
     color:#4E403A;
     padding:8px;
     margin:5px 0px 5px 5px;

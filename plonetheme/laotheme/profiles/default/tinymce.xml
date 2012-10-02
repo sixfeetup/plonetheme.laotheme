@@ -93,7 +93,7 @@
   <toolbar_hr value="False"/>
   <toolbar_insertdate value="False"/>
   <toolbar_cut value="False"/>
-  <toolbar_definitionlist value="True"/>
+  <toolbar_definitionlist value="False"/>
   <customtoolbarbuttons value=""/>
   <toolbar_paste value="False"/>
   <toolbar_justifycenter value="True"/>
@@ -109,7 +109,7 @@
   <toolbar_advhr value="False"/>
   <toolbar_removeformat value="False"/>
   <toolbar_undo value="False"/>
-  <toolbar_save value="True"/>
+  <toolbar_save value="False"/>
   <toolbar_sub value="False"/>
   <toolbar_numlist value="True"/>
   <toolbar_underline value="False"/>
@@ -124,7 +124,7 @@
   <toolbar_replace value="False"/>
   <toolbar_outdent value="True"/>
   <toolbar_strikethrough value="False"/>
-  <toolbar_pasteword value="False"/>
+  <toolbar_pasteword value="True"/>
   <toolbar_width value="440"/>
   <toolbar_print value="False"/>
   <toolbar_spellchecker value="False"/>
