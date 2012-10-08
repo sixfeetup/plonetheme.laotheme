@@ -3,7 +3,7 @@
      class="documentActions">
     <tal:docactions tal:condition="view/actions">
 
-    <h5 class="hiddenStructure" i18n:translate="heading_document_actions">Document Actions</h5>
+    <!--<h5 class="hiddenStructure" i18n:translate="heading_document_actions">Document Actions</h5>-->
 
     <ul tal:define="normalizeString nocall: context/@@plone/normalizeString">
     <tal:actions repeat="daction view/actions">
