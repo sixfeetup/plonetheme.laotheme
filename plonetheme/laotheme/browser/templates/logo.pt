@@ -1,5 +1,5 @@
 <div id="titlebox">
 <div id="psulogo">
-<a href="http://www.psu.edu" target="_blank"><img tal:replace="structure here/logo.gif/tag" alt="Penn State Home"/>
+<a href="http://www.psu.edu" target="_blank"><img src="logo.gif" height="45" width="97" alt="Penn State Home Page"/>
 </div>
 </div>
