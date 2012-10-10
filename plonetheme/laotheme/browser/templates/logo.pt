@@ -2,4 +2,8 @@
 <div id="psulogo">
 <a href="http://www.psu.edu" target="_blank"><img src="logo.gif" height="45" width="97" alt="Penn State Home Page"/>
 </div>
+<div id="headcoursetitle" tal:condition="context/course_title">
+         <p tal:replace="view/context/course_title">[course title property]</p><br />
+         <p tal:replace="view/context/course_number">[course number property]</p>
+       </div>  
 </div>
