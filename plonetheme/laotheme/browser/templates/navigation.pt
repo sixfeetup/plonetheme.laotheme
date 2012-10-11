@@ -9,8 +9,11 @@
            tal:attributes="href string:${root/absolute_url}/sitemap" 
            i18n:translate="box_navigation">
       <div id="coursetitle" tal:condition="context/course_title">
+      Course Navigation
+      <!--
          <p tal:replace="view/context/course_title">[course title property]</p><br />
          <p tal:replace="view/context/course_number">[course number property]</p>
+         -->
        </div>   
        <div id="coursetitle" tal:condition="not:view/context/course_title">Navigation</div>
 

@@ -35,9 +35,9 @@
   </order>
   
     <order manager="plone.portalheader" skinname="LAOtheme">
+    	<viewlet name="plonetheme.laotheme.logo" />
     	<viewlet name="plone.site_actions" insert-before="plone.searchbox"/>
     	<viewlet name="plone.searchbox"  />
-		<viewlet name="plonetheme.laotheme.logo" />
 	</order>
 	
 	<order manager="plone.belowcontentbody" skinname="LAOtheme"

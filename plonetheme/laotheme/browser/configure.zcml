@@ -50,6 +50,7 @@
     	permission="zope2.View"
     	/>
     	
+    	
     <!-- The customized footer -->
     <browser:viewlet
     	name="plonetheme.laotheme.footer"
