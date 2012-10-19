@@ -166,7 +166,7 @@ body{
     background-color:#ffffff; 
     width:80%;
     float:right;
-    margin:0 0px 4px 0;
+    margin:0px 0px 4px 0px;
     padding:0px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -178,7 +178,7 @@ body{
 }
 
 #content{
-    padding:0px 20px 0px 0px;
+    padding:0px 20px 0px 20px;
     margin:0;
 }
 
