@@ -65,6 +65,7 @@
 
   <hidden manager="plone.portaltop" skinname="LAOtheme">
     <viewlet name="plone.personal_bar" />
+    <viewlet name="plone.path_bar" />
   </hidden>
   
   <hidden manager="plone.portalheader" skinname="LAOtheme">
@@ -75,7 +76,7 @@
   
   <!--Hide default path_bar above content-->
   <hidden manager="plone.abovecontent" skinname="LAOtheme">
-		<viewlet name="plone.path_bar" />
+		<!--<viewlet name="plone.path_bar" />-->
   </hidden>
   
    <hidden manager="plone.belowcontentbody" skinname="LAOtheme">

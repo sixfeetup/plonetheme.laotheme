@@ -1,3 +1,7 @@
+
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
 body{
     background-image:url(bg_pattern.jpg);
 }
@@ -7,7 +11,7 @@ body{
     }
 
 #portal-header{
-    height:50px;
+    height:60px;
     width:100%;
     margin:0px;
     padding:0px;
@@ -18,17 +22,19 @@ body{
 }
 
 #portal-top{
-    background-image:none;
+    background-image:url(oldMain80.jpg);
+    background-repeat:no-repeat;
     padding:0;
-    margin-bottom:.6em;
+    margin-bottom:1em;
     margin-top:4px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: #787878 4px 4px 4px;
-    -moz-box-shadow: #787878 4px 4px 4px; 
-    box-shadow: #787878 4px 4px 4px;
-    background-color:#FFFFFF;
+    background-color:#F4FCFF;
+    border:1px solid #004f00;
+    -webkit-box-shadow: #004f00 4px 4px 4px;
+    -moz-box-shadow: #004f00 4px 4px 4px; 
+    box-shadow: #004f00 4px 4px 4px;
 }
 
 
@@ -68,7 +74,7 @@ body{
 
 #titlebox{
     float:left;
-    width:500px;
+    width:auto;
     height:50px;
     margin-top:0;
     background-image:none;
@@ -77,7 +83,7 @@ body{
 #psulogo{
     float:left;
     width:90px;
-    margin-left:8px;
+    margin-left:24px;
     padding-top:5px;
 }
 
@@ -110,13 +116,22 @@ body{
     font-weight:normal;
     line-height:90%;
     font-size:2.0em;
+    color:#004f00;
     margin:0;
-    color:green;
     border-bottom:none;
 }
 
 #headcoursetitle h3{
     font-size:.8em;
+    color:#004f00;
+}
+
+.portaltype-coursetitle #portal-breadcrumbs{
+    display:none;
+}
+
+.portaltype-lessontitle #portal-breadcrumbs{
+    display:none;
 }
 
 #portal-breadcrumbs{
@@ -131,35 +146,39 @@ body{
     margin-left: 0;
     }
 
+#portal-breadcrumbs{
+    background-color:#5B82AA;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 90%;
+    color:#FFFFFF;
+}
+
 #portal-breadcrumbs a {
-text-decoration:none;color:#000000;
+    color:#FFF;
 }
 
 
 #portal-columns{
-   background-color:transparent;
-   
+   background-color:transparent;   
 }
-
 
 #portal-column-content{
     background-color:#ffffff; 
     width:80%;
     float:right;
-    margin:0 4px 4px 0;
-    padding:0;
+    margin:0 0px 4px 0;
+    padding:0px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: #363636 4px 4px 4px;
-    -moz-box-shadow: #363636 4px 4px 4px; 
-    box-shadow: #363636 4px 4px 4px;
-    margin-bottom: 4px; 
-    padding-bottom: 0px;
+    -webkit-box-shadow: #5B82AA 4px 4px 4px;
+    -moz-box-shadow: #5B82AA 4px 4px 4px; 
+    box-shadow: #5B82AA 4px 4px 4px;
+    border:solid 1px #5B82AA;
 }
 
 #content{
-    padding:20px;
+    padding:0px 20px 0px 0px;
     margin:0;
 }
 
@@ -167,12 +186,19 @@ text-decoration:none;color:#000000;
 	margin:5px;
 	}
 
-
 #courseimagetile{
-     -webkit-border-radius: 10px;
+    background-image: url("http://localhost:8080/facdev101/courseimagetile.jpg");
+    clear: both;
+    height: 110px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 0px;
+    overflow: hidden;
+    -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
+
 #portal-column-one {
     float:left;
     width:18%;
@@ -182,10 +208,11 @@ text-decoration:none;color:#000000;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: #363636 4px 4px 4px;
-    -moz-box-shadow: #363636 4px 4px 4px; 
-    box-shadow: #363636 4px 4px 4px;
-    background-color:#ffffff; 
+    -webkit-box-shadow: #C07A00 4px 4px 4px;
+    -moz-box-shadow: #C07A00 4px 4px 4px; 
+    box-shadow: #C07A00 4px 4px 4px;
+    background-color:#FDEFD8;
+    border:solid 1px #E79300;
 }
 
 /*NAVIGATION PORTLET STYLES*/
@@ -206,7 +233,7 @@ dl.portlet  a:hover {
 }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
-    background-color: #EDEDED;
+    background-color: #FFFFFF;
     border-left: none;
     margin-left: 0;
     margin-right: 0;
@@ -217,7 +244,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     }
 
 .portletNavigationTree .portletHeader{
-    background-color:#797979;
+    background-color:#E79300;
     border:none;
     -webkit-border-radius: 10px 10px 0px 0px;
     -moz-border-radius: 10px 10px 0px 0px;
@@ -225,7 +252,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     }
 
 #coursetitle{
-    color:#FFF;
+    color:#FFFFFF;
 }
 
 
@@ -243,7 +270,7 @@ dl.portletNavigationTree dd.portletItem{
     }
 
 .navTreeItem a:hover, dd.portletItem .navTreeItem a:hover{
-    background-color: #EDEDED; 
+    background-color: #FDFDE9; 
     color: #000 !important;
     border:none;
     margin-right:0px;
@@ -528,3 +555,5 @@ h1, h2 {
 	opacity:.8;
 	color:#FFF;
 	}
+	
+/* </dtml-with> */
