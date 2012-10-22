@@ -2,6 +2,7 @@
 /* <dtml-with base_properties> (do not remove this :) */
 /* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
 
+/*SIMPLECOLOR THEME STYLES*/
 body{
     background-image:url(greenweave.jpg);
 }
@@ -70,7 +71,6 @@ body{
     border: none;
     text-decoration:underline;
 }
-
 
 #titlebox{
     float:left;
@@ -187,9 +187,10 @@ body{
 	}
 
 #courseimagetile{
-    background-image: url("http://localhost:8080/facdev101/courseimagetile.jpg");
+    height:<dtml-var "_[courseImageTile].height">px;
+	background-image:url(&dtml-portal_url;/&dtml-courseImageTile;);
+	background-repeat:x-repeat;
     clear: both;
-    height: 110px;
     margin-left: -20px;
     margin-right: -20px;
     margin-top: 0px;
@@ -198,6 +199,22 @@ body{
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
+
+#courseimageleft{
+	height:<dtml-var "_[courseImageLeft].height">px;
+	width:<dtml-var "_[courseImageLeft].width">px;
+	float:left;
+	background-image:url(&dtml-portal_url;/&dtml-courseImageLeft;);
+	background-repeat:no-repeat;
+	}
+
+#courseimageright{
+	height:<dtml-var "_[courseImageRight].height">px;
+	width:<dtml-var "_[courseImageRight].width">px;
+	float:right;
+	background-image:url(&dtml-portal_url;/&dtml-courseImageRight;);
+	background-repeat:no-repeat;
+	}
 
 #portal-column-one {
     float:left;

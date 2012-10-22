@@ -34,6 +34,7 @@ plonetheme/laotheme/browser/templates/footer.pt
 plonetheme/laotheme/browser/templates/logo.pt
 plonetheme/laotheme/browser/templates/navigation.pt
 plonetheme/laotheme/browser/templates/nextprevious.pt
+plonetheme/laotheme/browser/templates/portal_header.pt
 plonetheme/laotheme/locales/README.txt
 plonetheme/laotheme/profiles/.DS_Store
 plonetheme/laotheme/profiles/default/.DS_Store
@@ -57,11 +58,13 @@ plonetheme/laotheme/skins/plonetheme_laotheme_custom_images/checkAnswerBG.gif
 plonetheme/laotheme/skins/plonetheme_laotheme_custom_images/courseimageleft.jpg
 plonetheme/laotheme/skins/plonetheme_laotheme_custom_images/courseimageright.gif
 plonetheme/laotheme/skins/plonetheme_laotheme_custom_images/courseimagetile.jpg
+plonetheme/laotheme/skins/plonetheme_laotheme_custom_images/greenweave.jpg
 plonetheme/laotheme/skins/plonetheme_laotheme_custom_images/headerimage.jpg
 plonetheme/laotheme/skins/plonetheme_laotheme_custom_images/headertile.jpg
 plonetheme/laotheme/skins/plonetheme_laotheme_custom_images/hideAnswerBG.gif
 plonetheme/laotheme/skins/plonetheme_laotheme_custom_images/logo.gif
 plonetheme/laotheme/skins/plonetheme_laotheme_custom_images/logo.gif.metadata
+plonetheme/laotheme/skins/plonetheme_laotheme_custom_images/oldMain.jpg
 plonetheme/laotheme/skins/plonetheme_laotheme_custom_templates/CONTENT.txt
 plonetheme/laotheme/skins/plonetheme_laotheme_custom_templates/coursetitle_view.pt
 plonetheme/laotheme/skins/plonetheme_laotheme_custom_templates/coursetitle_view.pt.metadata
