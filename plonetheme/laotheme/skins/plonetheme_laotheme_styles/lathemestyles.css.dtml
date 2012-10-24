@@ -23,7 +23,7 @@ body{
 }
 
 #portal-top{
-    background-image:url(oldMain80.jpg);
+    background-image:url(oldMain.jpg);
     background-repeat:no-repeat;
     padding:0;
     margin-bottom:1em;
@@ -115,7 +115,7 @@ body{
     font-family:Garamond;
     font-weight:normal;
     line-height:90%;
-    font-size:2.0em;
+    font-size:1.5em;
     color:#004f00;
     margin:0;
     border-bottom:none;
@@ -306,7 +306,7 @@ dl.portletNavigationTree dd.portletItem{
 #courseimagetile{
 	clear:both;
 	margin-left: -20px;
-    margin-top: -20px;
+    margin-top: 0px;
     margin-right: -20px;
 	height:<dtml-var "_[courseImageTile].height">px;
 	overflow:hidden;
