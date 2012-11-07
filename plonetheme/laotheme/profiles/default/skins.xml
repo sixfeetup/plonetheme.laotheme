@@ -25,6 +25,9 @@
  <object name="plonetheme_laotheme_styles"
     meta_type="Filesystem Directory View"
     directory="plonetheme.laotheme:skins/plonetheme_laotheme_styles"/>
+ <object name="plonejquery"
+    meta_type="Filesystem Directory View"
+    directory="plonetheme.laotheme:skins/plonejquery"/>
 
  <!-- A skin-path in this file corresponds to a Skin Selection in the
      'Properties' tab of the portal_skins tool, in the ZMI.
@@ -45,6 +48,8 @@
      insert-after="plonetheme_laotheme_custom_images"/>
   <layer name="plonetheme_laotheme_styles"
      insert-after="plonetheme_laotheme_custom_templates"/>
+<layer name="plonejquery"
+     insert-after="plonetheme_laotheme_styles"/>
  </skin-path>
 
 </object>
