@@ -1,4 +1,5 @@
 jQuery(function($){
+$(window).load(function(){
 
 //*********** SHOW/HIDE QUESTION/ANSWER DIVS ******** 
 //HIDE ANSWER DIVS
@@ -86,6 +87,6 @@ $(".tooltip-target").hover(
   $(".tooltip-target").ezpz_tooltip();
   
  
-
+});//CLOSE WINDOW LOAD
 
 });//CLOSE DOCUMENT READY
